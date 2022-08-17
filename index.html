@@ -12,50 +12,61 @@
 </head>
 
 <body>
-  <div id='sidebar'>
-    <ul id=''>
-      <li><a href='#'>Home</a></li>
-      <li><a href='#'>Profile</a></li>
-      <li><a href='#'>Messages</a></li>
-      <li><a href='#'>History</a></li>
-      <li><a href='#'>Tasks</a></li>
-      <li><a href='#'>Communities</a></li>
-    </ul>
-    <ul>
-      <li><a href='#'>Settings</a></li>
-      <li><a href='#'>Support</a></li>
-      <li><a href='#'>Privacy</a></li>
-    </ul>
+  <div id='layout-container'>
+    <div id='sidebar'>
+      <ul id=''>
+        <li><a href='#'>Home</a></li>
+        <li><a href='#'>Profile</a></li>
+        <li><a href='#'>Messages</a></li>
+        <li><a href='#'>History</a></li>
+        <li><a href='#'>Tasks</a></li>
+        <li><a href='#'>Communities</a></li>
+      </ul>
+      <ul>
+        <li><a href='#'>Settings</a></li>
+        <li><a href='#'>Support</a></li>
+        <li><a href='#'>Privacy</a></li>
+      </ul>
+    </div>
+    <header id='header'>
+      <div id='header-top'>
+        <input type='search' id='search' name='search'>
+        <button id='notif'>bell</button>
+        <img src='' alt='' class='pfp'>
+        <div class='user-name'>Morgan Oakley</div>
+      </div>
+      <div id='header-bottom'>
+        <div id='greeting'>
+          <img src='' alt='' class='pfp'>
+          <div>
+            <div>Hi there,</div>
+            <div>Morgan Oakley (@morgan)</div>
+          </div>
+        </div>
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </header>
+    <div id='content-container'>
+      <div id='projects'>
+        <div class='title'>Your Projects</div>
+        <div id='card-container'>
+          <div class='cards'></div>
+          <div class='cards'></div>
+          <div class='cards'></div>
+          <div class='cards'></div>
+          <div class='cards'></div>
+          <div class='cards'></div>
+        </div>
+      </div>
+      <div id='announcement'>
+        <div class='title'>Announcements</div>
+      </div>
+      <div id='trends'>
+        <div class='title'>Trending</div>
+      </div>
+    </div>
   </div>
-  <header id='header'>
-    <input type='text' id='search'>
-    <button id='notif'></button>
-    <img src='' alt='' class='pfp'>
-    <div class='user-name'></div>
-    <div id='greeting'>
-      <img src='' alt='' class='pfp'>
-      <div></div>
-    </div>
-    <button>New</button>
-    <button>Upload</button>
-    <button>Share</button>
-  </header>
-  <div id='content-container'>
-    <div id='projects'>
-      <div class='cards'></div>
-      <div class='cards'></div>
-      <div class='cards'></div>
-      <div class='cards'></div>
-      <div class='cards'></div>
-      <div class='cards'></div>
-    </div>
-    <div id='announcement'>
-
-    </div>
-    <div id='trends'>
-      
-    </div>
-  </div>
-
 </body>
 </html>
