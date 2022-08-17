@@ -1,0 +1,42 @@
+root {
+  --sidebar-bg-color: #396eff;
+  --main-text-color: #1b1818;
+  --secondary-text-color: #ffffff;
+  --other-text-color: #7a7a7a;
+  --main-bg-color: #ddddfc;
+  --sec-bg-color: #ffffff;
+}
+
+#layout-container {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+#sidebar, #header, #content-container {
+  border: 1px solid black;
+}
+
+#sidebar {
+  grid-row: span 2;
+}
+
+#header-bottom, #header-top {
+  display:flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+#search {
+  flex: 0.5;
+}
+
+#notif {
+  margin-left: auto;
+}
+
+#header-bottom button:first-of-type {
+  margin-left: auto;
+}
+
+
+
