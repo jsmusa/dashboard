@@ -1,17 +1,23 @@
-root {
+:root {
   --sidebar-bg-color: #396eff;
   --main-text-color: #1b1818;
   --secondary-text-color: #ffffff;
-  --other-text-color: #7a7a7a;
-  --main-bg-color: #ddddfc;
+  --other-text-color: #6d6b6b;
+  --main-bg-color: #e4e4f5;
   --sec-bg-color: #ffffff;
+}
+
+h4 {
+  margin: 0;
 }
 
 #layout-container {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 0.7fr 5fr 0.25fr;
-  min-height: 100vh;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 #sidebar, #header, #content-container, #footer {
@@ -20,6 +26,10 @@ root {
 
 #sidebar {
   grid-row: span 2;
+}
+
+#sidebar li {
+  list-style: none;
 }
 
 #header-bottom, #header-top {
@@ -50,7 +60,8 @@ root {
 
 #content-container {
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 5fr 2fr;
+  background-color: var(--main-bg-color, white);
 }
 
 #projects {
@@ -60,13 +71,23 @@ root {
 #card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1em;
+  gap: 2em;
   padding: 1em;
 }
 
 .cards {
-  border: 1px solid black;
-  height: 200px;
+  border-radius: 6px;
+  box-shadow: 8px 0px rgb(255, 189, 7) inset,
+              2px 2px 1px rgb(199, 196, 196);
+  height: 175px;
+  background-color: var(--sec-bg-color, white);
+  padding: 2em;
+}
+
+.cards .content {
+  color: var(--other-text-color, gray);
+  font-size: 14px;
+  padding: 4px;
 }
 
 #footer {
