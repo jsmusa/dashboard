@@ -7,7 +7,7 @@
   --sec-bg-color: #ffffff;
 }
 
-h4 {
+h4, h5 {
   margin: 0;
   padding: 4px;
 }
@@ -88,10 +88,17 @@ a {
   padding: 2em;
 }
 
-.cards .content {
+.content {
   color: var(--other-text-color, gray);
   font-size: 14px;
   padding: 4px;
+}
+
+#announcements {
+  background-color: var(--sec-bg-color);
+  border-radius: 6px;
+  box-shadow: 2px 2px 1px rgb(199, 196, 196);
+  padding: 1.5em 1em;
 }
 
 #footer {
