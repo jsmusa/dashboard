@@ -1,14 +1,20 @@
 :root {
-  --sidebar-bg-color: #396eff;
+  --sidebar-bg-color: #1e7cd4;
   --main-text-color: #1b1818;
   --secondary-text-color: #ffffff;
   --other-text-color: #6d6b6b;
-  --main-bg-color: #e4e4f5;
+  --main-bg-color: #e8e8f1;
   --sec-bg-color: #ffffff;
 }
 
 h4 {
   margin: 0;
+  padding: 4px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 #layout-container {
@@ -20,12 +26,9 @@ h4 {
   box-sizing: border-box;
 }
 
-#sidebar, #header, #content-container, #footer {
-  border: 1px solid black;
-}
-
 #sidebar {
   grid-row: span 2;
+  background-color: var(--sidebar-bg-color, blue);
 }
 
 #sidebar li {
@@ -61,7 +64,9 @@ h4 {
 #content-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
+  gap: 2em;
   background-color: var(--main-bg-color, white);
+  padding: 1.5em 2em;
 }
 
 #projects {
@@ -70,9 +75,8 @@ h4 {
 
 #card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
   gap: 2em;
-  padding: 1em;
 }
 
 .cards {
@@ -98,6 +102,8 @@ h4 {
 
 #footer div {
   text-align: center;
+  background-color: var(--other-text-color, black);
+  color: #ffffff;
 }
 
 
