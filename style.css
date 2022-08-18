@@ -19,7 +19,7 @@ a {
 
 #layout-container {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 2fr 8fr;
   grid-template-rows: 0.7fr 5fr 0.25fr;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
@@ -28,11 +28,15 @@ a {
 
 #sidebar {
   grid-row: span 2;
-  background-color: var(--sidebar-bg-color, blue);
+  background-color: var(--sidebar-bg-color, lightblue);
 }
 
 #sidebar li {
   list-style: none;
+}
+
+#header {
+  padding: 1em 2em;
 }
 
 #header-bottom, #header-top {
@@ -43,6 +47,10 @@ a {
 
 #search {
   flex: 0.5;
+  border-radius: 15px;
+  background-color: var(--main-bg-color, lightgray);
+  border: none;
+  padding: 6px 10px;
 }
 
 #notif {
@@ -59,13 +67,29 @@ a {
 
 #header-bottom button {
   height: fit-content;
+  background-color: var(--sidebar-bg-color, lightblue);
+  color: var(--secondary-text-color);
+  border-radius: 40px;
+  border: none;
+  padding: 10px 1.5em;
+  transition: background-color 0.5s;
+}
+
+#header-bottom button:active {
+  transform: scale(1.1);
+}
+
+#header-bottom button:hover {
+  background-color: var(--main-bg-color, lightgray);
+  color: var(--sidebar-bg-color, lightblue);
 }
 
 #content-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
+  grid-template-rows: 1fr 1fr;
   gap: 2em;
-  background-color: var(--main-bg-color, white);
+  background-color: var(--main-bg-color, lightgray);
   padding: 1.5em 2em;
 }
 
@@ -75,14 +99,14 @@ a {
 
 #card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2em;
 }
 
 .cards {
   border-radius: 6px;
   box-shadow: 8px 0px rgb(255, 189, 7) inset,
-              2px 2px 1px rgb(199, 196, 196);
+              3px 3px 1px rgb(199, 196, 196);
   height: 175px;
   background-color: var(--sec-bg-color, white);
   padding: 2em;
@@ -97,7 +121,7 @@ a {
 #announcements {
   background-color: var(--sec-bg-color);
   border-radius: 6px;
-  box-shadow: 2px 2px 1px rgb(199, 196, 196);
+  box-shadow: 4px 4px 2px rgb(199, 196, 196);
   padding: 1.5em 1em;
 }
 
@@ -105,12 +129,12 @@ a {
   grid-column: span 2;
   display: grid;
   align-items: center;
+  background-color: var(--other-text-color, black);
+  color: #ffffff;
 }
 
 #footer div {
   text-align: center;
-  background-color: var(--other-text-color, black);
-  color: #ffffff;
 }
 
 
