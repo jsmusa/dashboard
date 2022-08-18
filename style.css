@@ -7,7 +7,7 @@
   --sec-bg-color: #ffffff;
 }
 
-h4, h5 {
+h2, h4, h5 {
   margin: 0;
   padding: 4px;
 }
@@ -29,6 +29,11 @@ a {
 #sidebar {
   grid-row: span 2;
   background-color: var(--sidebar-bg-color, lightblue);
+  color: var(--secondary-text-color, white);
+}
+
+#sidebar > .head {
+  padding: 1em;
 }
 
 #sidebar li {
