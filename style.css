@@ -19,9 +19,12 @@ a {
 
 #layout-container {
   display: grid;
-  grid-template-columns: 2fr 8fr;
-  grid-template-rows: 0.7fr 5fr 0.25fr;
-  height: 100vh;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr auto;
+  max-height: 100vw;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
@@ -41,8 +44,12 @@ a {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 12px;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+#sidebar a:hover {
+  text-decoration: underline;
 }
 
 #header {
@@ -77,6 +84,7 @@ label[for='search'] {
 #notif:hover {
   transition: color 0.5s;
   color: var(--sidebar-bg-color, blue);
+  cursor: pointer;
 }
 
 #greeting {
@@ -104,12 +112,13 @@ button:active {
 #header-bottom button:hover {
   background-color: var(--main-bg-color, lightgray);
   color: var(--sidebar-bg-color, lightblue);
+  cursor: pointer;
 }
 
 #content-container {
   display: grid;
   grid-template-columns: 5fr 2fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto 1fr;
   gap: 2em;
   background-color: var(--main-bg-color, lightgray);
   padding: 1.5em 2em;
@@ -121,7 +130,7 @@ button:active {
 
 #card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2em;
 }
 
@@ -129,22 +138,48 @@ button:active {
   border-radius: 6px;
   box-shadow: 8px 0px rgb(255, 189, 7) inset,
               3px 3px 1px rgb(199, 196, 196);
-  height: 175px;
+  height: 200px;
   background-color: var(--sec-bg-color, white);
   padding: 2em;
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
   color: var(--other-text-color, gray);
   font-size: 14px;
   padding: 4px;
+  flex: 1;
 }
 
-#announcements {
+.cards .buttons {
+  margin-left: auto;
+  display: flex;
+  gap: 1.5em;
+  text-align: center;
+}
+
+.buttons > .material-symbols-outlined {
+  font-size: 18px;
+  color: #3d3c3c;
+  cursor: pointer;
+}
+
+#announcement, #trending {
+  display: flex;
+  flex-direction: column;
+}
+
+#announcements, #trends{
   background-color: var(--sec-bg-color);
   border-radius: 6px;
   box-shadow: 4px 4px 2px rgb(199, 196, 196);
   padding: 1.5em 1em;
+  flex-shrink : 1;
+}
+
+.project {
+  color: var(--other-text-color, lightgray);
 }
 
 #footer {
