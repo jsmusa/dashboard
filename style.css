@@ -30,6 +30,7 @@ a {
   grid-row: span 2;
   background-color: var(--sidebar-bg-color, lightblue);
   color: var(--secondary-text-color, white);
+  font-size: 20px;
 }
 
 #sidebar > .head {
@@ -38,6 +39,10 @@ a {
 
 #sidebar li {
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
 }
 
 #header {
@@ -50,6 +55,11 @@ a {
   padding: 10px;
 }
 
+label[for='search'] {
+  display: flex;
+  align-items: center;
+}
+
 #search {
   flex: 0.5;
   border-radius: 15px;
@@ -60,6 +70,13 @@ a {
 
 #notif {
   margin-left: auto;
+  border: none;
+  background-color: var(--sec-bg-color, white);
+}
+
+#notif:hover {
+  transition: color 0.5s;
+  color: var(--sidebar-bg-color, blue);
 }
 
 #greeting {
@@ -80,7 +97,7 @@ a {
   transition: background-color 0.5s;
 }
 
-#header-bottom button:active {
+button:active {
   transform: scale(1.1);
 }
 
