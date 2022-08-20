@@ -60,6 +60,7 @@ a {
   display:flex;
   gap: 15px;
   padding: 10px;
+  align-items: center;
 }
 
 label[for='search'] {
@@ -88,7 +89,22 @@ label[for='search'] {
 }
 
 #greeting {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+#header-top img {
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #6d6b6b;
+}
+
+#header-bottom img {
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #6d6b6b;
+  grid-row: span 2;
+  margin-right: 12px;
 }
 
 #header-bottom button:first-of-type {
@@ -175,7 +191,24 @@ button:active {
   border-radius: 6px;
   box-shadow: 4px 4px 2px rgb(199, 196, 196);
   padding: 1.5em 1em;
-  flex-shrink : 1;
+  display: grid;
+}
+
+#trends {
+  gap: 2em  ;
+}
+
+.trend {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.trend > img {
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--other-text-color, lightgray);
+  grid-row: span 2;
+  margin-right: 2em;
 }
 
 .project {
