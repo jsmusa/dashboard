@@ -4,10 +4,12 @@
   <meta charset='UTF-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>Document</title>
+  <title>Admin Dashboard</title>
   <link rel='stylesheet' href='./normalize.css'>
   <link rel='stylesheet' href='./style.css'>
-  <link rel='stylesheet' href='https://developers.google.com/fonts/docs/material_icons'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <!-- <link rel='stylesheet' href='https://developers.google.com/fonts/docs/material_icons'> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -17,25 +19,26 @@
 <body>
   <div id='layout-container'>
     <div id='sidebar'>
-      <h2 class='head'>Dashboard</h2>
+      <h2 class='head'><span class='material-icons'>dashboard</span>Dashboard</h2>
       <ul id='list'>
-        <li><a href='#'>Home</a></li>
-        <li><a href='#'>Profile</a></li>
-        <li><a href='#'>Messages</a></li>
-        <li><a href='#'>History</a></li>
-        <li><a href='#'>Tasks</a></li>
-        <li><a href='#'>Communities</a></li>
+        <li><span class='material-icons'>home</span><a href='#'>Home</a></li>
+        <li><span class='material-icons size'>badge</span><a href='#'>Profile</a></li>
+        <li><span class='material-icons'>message</span><a href='#'>Messages</a></li>
+        <li><span class='material-icons'>history</span><a href='#'>History</a></li>
+        <li><span class='material-icons'>file_copy</span><a href='#'>Tasks</a></li>
+        <li><span class='material-icons'>groups</span><a href='#'>Communities</a></li>
       </ul>
       <ul>
-        <li><a href='#'>Settings</a></li>
-        <li><a href='#'>Support</a></li>
-        <li><a href='#'>Privacy</a></li>
+        <li><span class='material-icons'>settings</span><a href='#'>Settings</a></li>
+        <li><span class='material-icons'>help_center</span><a href='#'>Support</a></li>
+        <li><span class='material-icons'>verified_user</span><a href='#'>Privacy</a></li>
       </ul>
     </div>
     <header id='header'>
       <div id='header-top'>
+        <label for='search'><span class='material-icons'>search</span></label>
         <input type='search' id='search' name='search'>
-        <button id='notif'>bell</button>
+        <button id='notif'><span class='material-icons'>notifications_active</span></button>
         <img src='' alt='' class='pfp'>
         <div class='user-name'>Morgan Oakley</div>
       </div>
